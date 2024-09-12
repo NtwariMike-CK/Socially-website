@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins, sans-serif';
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  /* background-image: url(images/back-image2.jpg); */
+  background-color: #f5e7f7;
+  background-position: center;
+  background-size: cover;
+  /* padding: 0 010%; */
+  overflow: hidden;
+  position: relative;
+}
+
+.sub{
+  border: 1px solid black;
+  padding: 0 10% 10px;
+  background-color: antiquewhite;
+  margin: 3px 10px;
+  box-shadow: 7px 7px 5px rgb(6, 6, 6);
+  position: fixed;
+  width: 96%;
+
+}
+
+.content1{
+  padding: 0 10%;
+}
+nav {
+  /* padding: 0 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo{
+  width: 140px;
+  margin-top: 10px;
+  background-color: #c430d7;
+  border-radius: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+  transition: 0.5s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.login {
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(0,0,0);
+  transition: 0.5s;
+}
+
+.Download{
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  color: black;
+  font-weight: bold;
+  background-image: linear-gradient(45deg,#df4881, #c430d7);
+  font-size: 15px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+}
+.Join {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 80px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-image: linear-gradient(45deg,#df4881, #c430d7);
+  font-size: 16px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+}
+
+.Join.anim{
+  animation-delay: 1s;
+}
+
+.content {
+  margin-top: 12%;
+  margin-left: 8%;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 70px;
+  color: #000000;
+}
+.content p {
+  margin: 10px 0 30px;
+  color: #000000;
+  animation-delay: 0.5s;
+}
+
+.Join:hover{
+  border-top-right-radius: 30px;
+  font-size: 22px;
+  padding: 13px 75px;
+  color: #ffffff;
+}
+
+.Download:hover{
+  border-top-right-radius: 30px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.feature{
+  position: absolute;
+  bottom: 0;
+  margin-left: 200px;
+  top: 15%;
+  left: 630px;
+  height: auto;
+  padding-right: 25x;
+  width: 400px;
+} 
+
+.feature.anim{
+  animation-delay: 1.5s;
+}
+
+body.works_on_smartphone{
+  display: block;
+}
+
+
+nav ul li a:hover{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #c430d7;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.login:hover{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #c430d7;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* working on animations */
+.anim{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* .feature{
+  position: absolute;
+  bottom: 0;
+  margin-left: 200px;
+  top: 15%;
+  left: 630px;
+  height: auto;
+  padding-right: 25x;
+  width: 400px;
+} */
